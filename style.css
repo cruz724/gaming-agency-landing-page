@@ -622,3 +622,35 @@ nav {
   color: #00ffe1;
   font-size: 20px;
 }
+
+
+:root {
+  --scrollbar-size: 6px;
+  --scrollbar-radius: 999px;
+
+  --scrollbar-track: #0b0c10;
+
+  --scrollbar-thumb: linear-gradient(
+    180deg,
+    #c9c9cd,
+    #8f899a,
+    #727c87
+  );
+
+  --scrollbar-shadow: 0 3px 8px rgba(0, 0, 0, 0.45);
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-radius);
+  box-shadow: var(--scrollbar-shadow);
+}
